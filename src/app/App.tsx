@@ -190,7 +190,7 @@ export default function App() {
         transition={{ delay: 1, duration: 0.5 }}
         className="relative z-10 text-center py-8 px-4"
       >
-        <p className="text-gray-600 italic">Hecho con amor para ti 💝 Navidad 2024 🎄</p>
+        <p className="text-gray-600 italic">Hecho con amor para mi Pauli 💝 Navidad 2025 🎄</p>
       </motion.footer>
     </div>
   );

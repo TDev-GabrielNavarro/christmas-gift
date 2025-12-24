@@ -6,18 +6,22 @@ export function LoveLetter() {
   const [isOpen, setIsOpen] = useState(false);
   const [displayedText, setDisplayedText] = useState("");
   
-  const letterText = `Mi amor,
+  const letterText = `Pauli,
 
-Cada día a tu lado es un regalo que atesoro en mi corazón. Tu sonrisa ilumina mis días más oscuros, y tu risa es la melodía más hermosa que he escuchado.
+Desde Abril de este 2025, cada día que me regalaste a tu lado es un tesoro en mi corazón. La sonrisa que me imaginaba que ibas a tener el primer día que te vi, simplemente superó mis expectativas y tu risa es simplemente el accesorio que más me imagino día tras día.
 
-Gracias por ser mi compañera, mi mejor amiga, y el amor de mi vida. En ti he encontrado un hogar, un refugo donde puedo ser yo mismo sin miedo.
+Gracias por ser mi compañera, mi mejor amiga y el amor de mi vida. En ti he encontrado un hogar, un refugio donde puedo ser yo mismo sin miedo.
+
+Donde cada vez que pasa algo, descubro que puedo abrirme más y más contigo, y eso es algo que valoro profundamente.
 
 Esta Navidad quiero que sepas que eres el mejor regalo que la vida me ha dado. No necesito nada más mientras te tenga a ti.
 
-Te amo hoy, mañana y siempre.
+Te amo. Mucho más que ayer, pero menos que mañana.
+
+¡De aquí hasta el infinito!
 
 Con todo mi corazón,
-Tu amor 💕`;
+Gabito 🦖`;
 
   const handleOpenLetter = () => {
     if (!isOpen) {

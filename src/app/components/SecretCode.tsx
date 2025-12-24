@@ -9,7 +9,7 @@ interface SecretCodeProps {
 export function SecretCode({ onUnlock }: SecretCodeProps) {
   const [code, setCode] = useState("");
   const [error, setError] = useState(false);
-  const correctCode = "TEAMO"; // Código secreto
+  const correctCode = "GXP1N"; // Código secreto
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ export function SecretCode({ onUnlock }: SecretCodeProps) {
           initial={{ 
             top: `-${Math.random() * 100}px`, 
             left: `${Math.random() * 100}%`,
-            opacity: 0.3 
+            opacity: 0.3
           }}
           animate={{
             top: "110%",

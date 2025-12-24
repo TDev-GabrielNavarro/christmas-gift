@@ -49,7 +49,7 @@ export function WelcomeMessage({ onComplete }: WelcomeMessageProps) {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="text-rose-600 mb-6 px-4"
         >
-          Bienvenida amor,
+          Bienvenida Pauli,
         </motion.h1>
 
         <motion.p

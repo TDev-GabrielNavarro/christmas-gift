@@ -2,6 +2,16 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Heart, X } from "lucide-react";
 
+import pic1 from '@/assets/images/inicio.jpeg';
+import pic2 from '@/assets/images/fever.jpeg';
+import pic3 from '@/assets/images/karenpic.jpeg';
+import pic4 from '@/assets/images/asistente.jpeg';
+import pic5 from '@/assets/images/pool.jpeg';
+import pic6 from '@/assets/images/hallowen.jpeg';
+import pic7 from '@/assets/images/derecha.jpeg';
+import pic8 from '@/assets/images/zoo.jpeg';
+import pic9 from '@/assets/images/cc.jpeg';
+
 interface Photo {
   url: string;
   caption: string;
@@ -12,29 +22,41 @@ export function Gallery() {
 
   const photos: Photo[] = [
     {
-      url: "https://images.unsplash.com/photo-1663428710477-c7c838be76b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb21hbnRpYyUyMGNvdXBsZSUyMGxvdmV8ZW58MXx8fHwxNzY2NDExNTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "Nuestros momentos juntos son mis favoritos 💕"
+      url: pic1,
+      caption: "Se podria decir que aqui empezo todo, no? 🎊"
     },
     {
-      url: "https://images.unsplash.com/photo-1658851866325-49fb8b7fbcb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3VwbGUlMjBzdW5zZXQlMjByb21hbnRpY3xlbnwxfHx8fDE3NjY1MzQ2NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "Cada atardecer es más hermoso contigo ✨"
+      url: pic2,
+      caption: "Nuestras primeras salidas juntos. Cuano saliamos diario a vernos. 🌊"
     },
     {
-      url: "https://images.unsplash.com/photo-1649762107978-817d8dbdd079?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3VwbGUlMjBoYXBweSUyMGxvdmV8ZW58MXx8fHwxNzY2NTEzOTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "Tu sonrisa ilumina mi vida 😊"
+      url: pic3,
+      caption: "Cuando mami Karen nos pide fotos. 📸"
     },
     {
-      url: "https://images.unsplash.com/photo-1591625717042-3b2b55f6a388?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3VwbGUlMjBiZWFjaCUyMHJvbWFudGljfGVufDF8fHx8MTc2NjUzNDY0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "Aventuras contigo siempre 🌊"
+      url: pic4,
+      caption: "Dispuesto a ser tu asistente. Como si estudiara dos carreras. 🎓"
     },
     {
-      url: "https://images.unsplash.com/photo-1514846528774-8de9d4a07023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3VwbGUlMjBuYXR1cmUlMjBsb3ZlfGVufDF8fHx8MTc2NjUzNDY0NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "Tú y yo contra el mundo 🌍"
+      url: pic5,
+      caption: "Esa cabaña que es ya inolvidable para nosotros. 🏕️"
     },
     {
-      url: "https://images.unsplash.com/photo-1677525434289-f3840d85f9f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3VwbGUlMjB3aW50ZXIlMjBsb3ZlfGVufDF8fHx8MTc2NjUzNDY0NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "Calentando mi corazón en invierno ❄️💝"
-    }
+      url: pic6,
+      caption: "Nuestro primer Halloween juntos. 🎃"
+    },
+    {
+      url: pic7,
+      caption: "Siempre voy a concentirte. 👑"
+    },
+    {
+      url: pic8,
+      caption: "No dejas de darme nuevas experiencias. 🦁"
+    },
+    {
+      url: pic9,
+      caption: "Incluso estuvimos juntos para sacar la cedula. 🦖"
+    },
   ];
 
   return (
@@ -46,7 +68,7 @@ export function Gallery() {
       >
         <Heart className="w-16 h-16 text-rose-500 fill-rose-500 mx-auto mb-4" />
         <h2 className="text-rose-600 mb-2">Nuestros Recuerdos</h2>
-        <p className="text-gray-600">Momentos que atesoro en mi corazón</p>
+        <p className="text-gray-600">Momentos que atesoro en mi corazón de este 2025</p>
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
@@ -129,7 +151,7 @@ export function Gallery() {
         transition={{ delay: 0.8 }}
         className="mt-8 text-center"
       >
-        <p className="text-gray-600 italic">📸 Cada foto cuenta nuestra historia de amor 💕</p>
+        <p className="text-gray-600 italic">📸 Cada foto cuenta un pedazo de nuestra historia 💕</p>
       </motion.div>
     </div>
   );
