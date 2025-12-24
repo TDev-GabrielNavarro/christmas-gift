@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/christmas-gift/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
